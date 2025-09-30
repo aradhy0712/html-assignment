@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collective HTML Project</title>
+    <style>
+        /* Minimal styling to make the sections readable. 
+           Add extensive CSS to match the video's look and feel. */
+        body { font-family: sans-serif; margin: 0; padding: 0; }
+        header { background-color: #ffe082; padding: 20px; text-align: center; }
+        nav { margin-top: 10px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        section { padding: 40px 20px; border-bottom: 1px solid #ccc; }
+        h1, h2 { color: #333; }
+        table { border-collapse: collapse; width: 50%; margin: 20px 0; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To My HTML Project</h1>
+        <nav>
+            <a href="#form-section">Form</a>
+            <a href="#table-section">Table</a>
+            <a href="#list-section">List</a>
+            <a href="#video-section">Video Content</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section">
+            <h2>HTML Projects</h2>
+            <p>This is My First HTML Project...</p>
+            <p>Level up your skills by exploring various HTML Projects. Master your HTML coding abilities with this step-by-step code example guide.</p>
+            </section>
+
+        <section id="form-section">
+            <h2>Fill the form...</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Mail Id" required><br><br>
+                
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br><br>
+
+                <p>Select the subject:</p>
+                <select id="subject" name="subject">
+                    <option value="frontend">Front-End</option>
+                    <option value="backend">Back-End</option>
+                </select><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="table-section">
+            <h2>Create a Table which looks like this 👇</h2>
+            <table>
+                <thead>
+                    <tr><th colspan="4">Table Header</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                    <tr><td>Cell 5</td><td>Cell 6</td><td>Cell 7</td><td>Cell 8</td></tr>
+                    <tr><td>Cell 9</td><td>Cell 10</td><td>Cell 11</td><td>Cell 12</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="list-section">
+            <h2>Lists in HTML</h2>
+            
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Sample Item 1</li>
+                <li>Sample Item 2</li>
+                <li>Sample Item 3</li>
+            </ul>
+
+            <h3>Nested List Example</h3>
+            <ol type="I">
+                <li>Primary Item A</li>
+                <li>Primary Item B
+                    <ol type="a">
+                        <li>Secondary Item 1</li>
+                        <li>Secondary Item 2
+                            <ul>
+                                <li>Tertiary Item i</li>
+                                <li>Tertiary Item ii</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>Primary Item C</li>
+            </ol>
+        </section>
+
+        <section id="video-section">
+            <h2>Video Content</h2>
+            <video controls width="100%" style="max-width: 700px;">
+                <source src="VID-20250926-WA0025.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 10px; background-color: #333; color: white;">&copy; 2024 My HTML Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
